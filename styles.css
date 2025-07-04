@@ -1,0 +1,401 @@
+body {
+    margin: 0px;
+    background-color: hsl(232, 19%, 15%);
+    color: hsl(0, 0%, 100%);
+    scroll-behavior: smooth;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.light-theme-body {
+    color: hsl(230, 17%, 14%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.first-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.logo {
+    padding: 30px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0px;
+}
+
+.logo .left #total-followers {
+    margin: 0px;
+    color: hsl(228, 34%, 66%);
+}
+
+.logo .right {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .right #theme {
+    margin-right: 10px;
+}
+
+.right .btn1 {
+    width: 65px;
+    height: 25px;
+    background: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn1::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: hsl(232, 19%, 15%);
+    margin: 2.5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input:checked + .btn1::before {
+    background-color: whitesmoke;
+}
+
+input:checked + .btn1::before {
+    transform: translateX(40px);
+}
+
+input {
+    display: none;
+}
+
+.second-container {
+    width: 100%;
+    height: auto;
+    background-color: hsl(230, 17%, 14%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second-container .layout1 {
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.layout1 .item {
+    padding: 20px;
+    height: auto;
+    width: 300px;
+    color: hsl(228, 34%, 66%);
+    background-color: hsl(228, 28%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.light-theme-item {
+    padding: 20px;
+    height: auto;
+    width: 300px;
+    color: hsl(228, 12%, 44%);
+    background-color: hsl(227, 47%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.light-theme-item:hover {
+    color: hsl(228, 34%, 66%);
+}
+
+.layout1 .item:hover {
+    background-color: hsl(228, 12%, 44%);
+}
+
+.layout1 p {
+    font-size: 14px;
+}
+
+.facebook {
+    border-top-color: hsl(208, 92%, 53%);
+
+}
+
+.twitter {
+    border-top-color: hsl(203, 89%, 53%);
+}
+
+.instagram {
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.youtube {
+    border-top-color: hsl(348, 97%, 39%);
+
+}
+
+.item-logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-logo img {
+    width: 25px;
+    height: 25px;
+}
+
+.layout1 .followers-count {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.followers, .subscribers {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.current-status {
+    color: hsl(163, 72%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.current-status img {
+    width: 10px;
+    height: 5px;
+}
+
+.youtube .current-status p {
+    color: hsl(356, 69%, 56%);
+}
+
+.third-container {
+    background-color: hsl(230, 17%, 14%);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.third-container .layout2 {
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.layout2 .sub-layout1, .layout2 .sub-layout2 {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.sub-layout1 .sub-item, .sub-layout2 .sub-item {
+    padding: 10px 30px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: hsl(228, 28%, 20%);
+    color: hsl(228, 34%, 66%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.light-theme-sub-items {
+    padding: 10px 30px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: hsl(227, 47%, 96%);
+    color: hsl(228, 12%, 44%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.light-theme-sub-items:hover {
+    color: hsl(228, 34%, 66%);
+}
+
+.sub-layout1 .sub-item:hover, .sub-layout2 .sub-item:hover {
+    background-color: hsl(228, 12%, 44%);
+}
+
+.sub-layout1 img, .sub-layout2 img {
+    height: 20px;
+    width: 20px;
+}
+
+.likes, .views {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.views-count, .likes-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.views-count #count, .likes-count #count {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.view-percent, .likes-percent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-percent img, .likes-percent img {
+    height: 5px;
+    width: 10px;
+}
+
+#increasing {
+    color: hsl(146, 68%, 55%);
+}
+
+#decreasing {
+    color: hsl(356, 69%, 56%);
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo .left {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: slategrey;
+    }
+    .logo .right {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .second-container .layout1 {
+        width: 100%;
+    }
+    .second-container .layout1 .item {
+        padding: 30px;
+        width: auto;
+    }
+    .third-container h2 {
+        text-align: center;
+    }
+    .third-container .layout2 {
+        width: 100%;
+        padding: 30px;
+    }
+    .third-container .sub-layout1 {
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .third-container .sub-layout2 {
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .sub-layout1 .sub-item, .sub-layout1 .light-theme-sub-items {
+        width: auto;
+        padding: 30px;
+    }
+    .sub-layout2 .sub-item, .sub-layout2 .light-theme-sub-items {
+        width: auto;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .third-container .layout2 {
+        width: 100%;
+    }
+}
